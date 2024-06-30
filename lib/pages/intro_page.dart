@@ -45,7 +45,8 @@ class IntroPage extends StatelessWidget {
             const Spacer(flex: 4),
 
             //button
-            MyButton(onTap: () {}),
+            MyButton(onTap: () {
+              Navigator.pushNamed(context, '/shop_page');}),
             const Spacer(flex: 1),
           ],
         ),
