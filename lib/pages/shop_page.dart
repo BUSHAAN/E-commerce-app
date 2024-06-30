@@ -1,13 +1,21 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:e_commerce_app/components/my_drawer.dart';
+import 'package:e_commerce_app/components/my_product_tile.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import '../models/shop.dart';
 
 class ShopPage extends StatelessWidget {
   const ShopPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+
+    //accessing the shop products
+    final products = context.watch<Shop>().shop;
+
     return Scaffold(
       appBar: AppBar(
         iconTheme: IconThemeData(color: Theme.of(context).colorScheme.background),
@@ -18,12 +26,10 @@ class ShopPage extends StatelessWidget {
         ),
       ),
       drawer: MyDrawer(),
-      body: Center(
-          child: Text("Shop Page",
-              style: TextStyle(
-                fontSize: 30,
-                color: Colors.black,
-              ))),
+      body: ListView.builder(itemBuilder: (context,index){
+        final product = products[index];
+        return MyProductTile(product: product);
+      }, itemCount: products.length),
     );
   }
 }
