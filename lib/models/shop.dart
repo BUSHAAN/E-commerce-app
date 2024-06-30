@@ -40,10 +40,12 @@ class Shop extends ChangeNotifier{
   //add item to cart
   void addToCart(Product product){
     _cart.add(product);
+    notifyListeners();
   }
 
   //remove item from cart
   void removeFromCart(Product product){
     _cart.remove(product);
+    notifyListeners();
   }
 }
