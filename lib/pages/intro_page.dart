@@ -18,7 +18,7 @@ class IntroPage extends StatelessWidget {
             Icon(
               Icons.shopping_cart,
               size: 100,
-              color: Theme.of(context).colorScheme.primary,
+              color: Theme.of(context).colorScheme.inversePrimary,
             ),
             const SizedBox(
               height: 25,
@@ -29,7 +29,7 @@ class IntroPage extends StatelessWidget {
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
-                color: Theme.of(context).colorScheme.primary,
+                color: Theme.of(context).colorScheme.inversePrimary,
               ),
             ),
 
@@ -38,7 +38,7 @@ class IntroPage extends StatelessWidget {
               'Shop smarter, shop faster.',
               style: TextStyle(
                 fontSize: 17,
-                color: Theme.of(context).colorScheme.primary,
+                color: Theme.of(context).colorScheme.inversePrimary,
               ),
             ),
 

@@ -22,7 +22,7 @@ class MyDrawer extends StatelessWidget {
                   child: Icon(
                     Icons.shopping_bag,
                     size: 100,
-                    color: Theme.of(context).colorScheme.primary,
+                    color: Theme.of(context).colorScheme.inversePrimary,
                   ),
                 ),
               ),

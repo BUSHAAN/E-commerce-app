@@ -18,11 +18,12 @@ class ShopPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        iconTheme: IconThemeData(color: Theme.of(context).colorScheme.background),
-        backgroundColor: Theme.of(context).colorScheme.primary,
+        centerTitle: true,
+        iconTheme: IconThemeData(color: Theme.of(context).colorScheme.inversePrimary),
+        backgroundColor: Theme.of(context).colorScheme.secondary,
         title: Text(
           "Shop Page",
-          style: TextStyle(color: Theme.of(context).colorScheme.background),
+          style: TextStyle(color: Theme.of(context).colorScheme.inversePrimary),
         ),
       ),
       drawer: MyDrawer(),

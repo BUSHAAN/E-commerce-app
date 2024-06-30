@@ -16,12 +16,12 @@ class MyListTile extends StatelessWidget {
       child: ListTile(
         leading: Icon(
           icon,
-          color: Theme.of(context).colorScheme.primary,
+          color: Theme.of(context).colorScheme.inversePrimary,
         ),
         title: Text(
           title,
           style: TextStyle(
-            color: Theme.of(context).colorScheme.primary,
+            color: Theme.of(context).colorScheme.inversePrimary,
             fontSize: 20,
           ),
         ),
