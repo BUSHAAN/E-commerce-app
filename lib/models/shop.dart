@@ -7,9 +7,9 @@ class Shop extends ChangeNotifier {
   final List<Product> _shop = [
     //product 1
     Product(
-        name: "Classic Comfort Blue Hoodie",
+        name: "Comfort Black Hoodie",
         description:
-            "Made with soft, breathable fleece, it's perfect for layering up or lounging around." ,
+            "Made with soft and breathable material, it's perfect for layering up or lounging around." ,
         price: 99.99,
         image: "assets/hoodie.png"),
     Product(
@@ -18,12 +18,12 @@ class Shop extends ChangeNotifier {
         price: 59.99,
         image: "assets/watch.png"),
     Product(
-        name: "Energize Blue Running Shoes",
+        name: "Energize Running Shoes",
         description: "Features a breathable mesh upper, a responsive cushioned sole, and a supportive fit.",
         price: 49.99,
         image: "assets/shoe.png"),
     Product(
-        name: "Navigator Blue Mirrored Sunglasses",
+        name: "Navigator black Mirrored Sunglasses",
         description: "The classic aviator frame in a cool blue shade complements any outfit.",
         price: 29.99,
         image: "assets/sunglasses.png"),
