@@ -30,16 +30,28 @@ class MyDrawer extends StatelessWidget {
                 height: 25,
               ),
               //shop tile
-              MyListTile(title: "Shop", icon: Icons.home, onTap: () {}),
+              MyListTile(
+                  title: "Shop",
+                  icon: Icons.home,
+                  onTap: () {
+                    Navigator.pop(context);
+                  }),
               //cart tile
               MyListTile(
-                  title: "Cart", icon: Icons.shopping_cart, onTap: () {}),
+                  title: "Cart", icon: Icons.shopping_cart, onTap: () {
+                    Navigator.pop(context);
+                    Navigator.pushNamed(context, '/cart_page');
+                    
+                  }),
             ],
           ),
           //exit tile
           Padding(
             padding: const EdgeInsets.only(bottom: 25.0),
-            child: MyListTile(title: "Exit", icon: Icons.logout, onTap: () {}),
+            child: MyListTile(title: "Exit", icon: Icons.logout, onTap: () {
+              Navigator.pop(context);
+                    Navigator.pushNamedAndRemoveUntil(context, '/intro_page',(route)=>false);
+            }),
           ),
         ],
       ),
