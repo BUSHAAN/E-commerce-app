@@ -111,6 +111,32 @@ class CartPage extends StatelessWidget {
                       itemCount: shop.cart.length,
                     ),
             ),
+            //
+            //total
+            shop.cart.isNotEmpty
+                ? Padding(
+                    padding: const EdgeInsets.all(25.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Total:",
+                          style: TextStyle(
+                              fontSize: 20,
+                              color:
+                                  Theme.of(context).colorScheme.inversePrimary),
+                        ),
+                        Text(
+                          "\$${shop.totalPrice.toStringAsFixed(2)}",
+                          style: TextStyle(
+                              fontSize: 20,
+                              color:
+                                  Theme.of(context).colorScheme.inversePrimary),
+                        ),
+                      ],
+                    ),
+                  )
+                : Container(),
             //pay button
             Padding(
               padding: const EdgeInsets.only(bottom: 25.0),
