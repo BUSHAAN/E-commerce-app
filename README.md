@@ -1,5 +1,10 @@
 # StashIt
 
+<p>
+  <a href="https://flutter.dev/"><img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter"/></a>
+  <a href="https://dart.dev/"><img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart"/></a>
+</p>
+
 ### A simple Flutter UI for an e-commerce app.  
 
 ⚠️ Note: This is **only the front-end/UI part** — products are hardcoded and there’s no backend or real payment system.
